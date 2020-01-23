@@ -8,6 +8,6 @@ services:
       - "8443:8443"
       - "50000:50000"
     volumes:
-      - ./jenkins_data:/var/jenkins_home
-      - ./home:/home
+      - /home/ubuntu/GitHub/jenkins_data:/var/jenkins_home
+      - /home/ubuntu/GitHub/home:/home
       - /var/run/docker.sock:/var/run/docker.sock

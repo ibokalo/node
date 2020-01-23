@@ -7,10 +7,8 @@ pipeline {
                         sh 'npm --version'
             }
         }
-                stage('clone') {
-                    steps {
-                        sh 'git clone https://github.com/ibokalo/node.git'
-                    }
+                stage('Checkout') {
+                    
     }
 }
 }
