@@ -7,8 +7,4 @@ pipeline {
                         sh 'npm --version'
             }
         }
-                stage('Checkout') {
-                    
-    }
-}
 }
