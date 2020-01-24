@@ -7,4 +7,3 @@ pipeline {
                         sh 'npm --version'
             }
         }
-}
