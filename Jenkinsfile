@@ -9,7 +9,7 @@ pipeline {
             }
                 stage ('deploy') {
                     steps {
-                        sh 'ssh ubuntu@172.17.0.1 & rm -rf /home/ubuntu/deploy/temp'
+                        sh 'ssh ubuntu@172.17.0.1 rm -rf /home/ubuntu/deploy/temp'
             }
 }
 }
