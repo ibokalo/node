@@ -9,7 +9,7 @@ pipeline {
             }
                 stage ('deploy') {
                     steps {
-                        sh 'echo “Run some lints”'
+                        sh 'ssh ubuntu@172.17.0.1 mkdir -p /var/www/temp_deploy'
             }
 }
 }
