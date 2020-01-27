@@ -11,8 +11,8 @@ node {
        sh 'echo “Tests will back”'
     }
       stage ('Build') {
-       sh 'npm run clean'
-       sh 'npm run build'
+       // sh 'npm run clean'
+       // sh 'npm run build'
     }
       stage ('Deploy') {
        ssh 'ubuntu@172.17.0.1 rm -rf /home/ubuntu/deploy/temp'
