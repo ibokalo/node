@@ -15,7 +15,7 @@ node {
        // sh 'npm run build'
     //}
       stage ('Deploy') {
-       ssh 'ubuntu@172.17.0.1 rm -rf /home/ubuntu/deploy/temp'
+        sh 'ssh ubuntu@172.17.0.1 rm -rf /home/ubuntu/deploy/temp'
       // sh 'ssh user@server rm -rf /var/www/temp_deploy/dist/'
       // sh 'ssh user@server mkdir -p /var/www/temp_deploy'
       // sh 'scp -r dist user@server:/var/www/temp_deploy/dist/'
