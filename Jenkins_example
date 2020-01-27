@@ -1,6 +1,6 @@
 node {
       stage ('Prepare environment') {
-        git branch: 'master, url: 'git@github.com:ibokalo/node.git'
+        git branch: 'master', url: 'git@github.com:ibokalo/node.git'
           sh 'npm install'
     }
       stage ('Code analyse') {
