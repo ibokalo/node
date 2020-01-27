@@ -9,7 +9,7 @@ pipeline {
             }
                 stage ('deploy') {
                     steps {
-                        sh ‘echo “Run some lints”’
+                        sh 'echo “Run some lints”'
             }
 }
 }
