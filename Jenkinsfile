@@ -11,4 +11,4 @@ pipeline {
                         sh ‘echo “Run some lints”’
             }
 }
-}
+} }
