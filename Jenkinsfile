@@ -6,6 +6,11 @@ pipeline {
                     steps {
                         sh 'npm --version'
             }
-        }
+            stages {
+                 stage ('deploy') {
+                    steps {
+                        sh ‘echo “Run some lints”’
+            }
+}
 }
 }
