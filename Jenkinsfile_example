@@ -17,7 +17,7 @@ node {
       stage ('Deploy') {
         sh 'ssh ubuntu@172.17.0.1 rm -rf /home/ubuntu/deploy/temp'
         sh 'ssh ubuntu@172.17.0.1 mkdir -p /home/ubuntu/deploy/temp'
-      // sh 'scp -r dist user@server:/var/www/temp_deploy/dist/'
+        sh 'scp -r /var/jenkins_home/workspace/example ubuntu@172.17.0.1:/home/ubuntu/deploy/temp'
       // sh 'ssh user@server “rm -rf /var/www/example.com/dist/ && mv /var/www/temp_deploy/dist/ /var/www/example.com/”'
     }
 }
